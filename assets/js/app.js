@@ -13,15 +13,12 @@ class Shape {
         this._colour = colour;
         this.index = index;
     }
-
     get name() {
         return this._name;
     }
-
     get colour() {
         return this._colour;
     }
-
     getInfo() {
         return `Unit ${this.index}: ${this.colour} ${this.name}`;
     }
@@ -31,7 +28,7 @@ function createShapeDiv(shape, colour, index) {
     const div = document.createElement('div');
     div.classList.add(shape, colour);
     div.dataset.index = index;
-
+  //the following is from chatGPT, how to arrange the grid 
     const totalColumns = 6;
     const totalRows = 4;
     const rowIndex = Math.floor((index - 1) / totalColumns); 
@@ -41,7 +38,6 @@ function createShapeDiv(shape, colour, index) {
 
     div.style.gridRowStart = gridRow;
     div.style.gridColumnStart = gridCol;
-
     return div;
 }
 

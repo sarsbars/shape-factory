@@ -33,11 +33,12 @@ function createShapeDiv(shape, colour, index) {
     div.dataset.index = index;
 
     const totalColumns = 6;
-    const totalRows = 4; 
+    const totalRows = 4;
     const rowIndex = Math.floor((index - 1) / totalColumns); 
     const colIndex = (index - 1) % totalColumns; 
-    const gridRow = totalRows - rowIndex;
-    const gridCol = colIndex + 1;
+    const gridRow = totalRows - rowIndex; 
+    const gridCol = colIndex + 1; 
+
     div.style.gridRowStart = gridRow;
     div.style.gridColumnStart = gridCol;
 

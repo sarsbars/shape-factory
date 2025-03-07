@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sarah Mitchell">
+        <meta name="description" content="My new cool project">
+        <meta name="keywords" content="web development, html, css, javascript, winnipeg, canada">
+        <title>Shape Factory</title>
+        <link rel="icon" href="./assets/img/purple-circle.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/main.css" media="all" >
+        <script src="assets/js/app.js" defer></script>
+    </head>
+    <body>
+      <main>
+        <div class="container"> 
+          <h1>Shape Factory</h1>
+          <div class="shape-selection center">
+            <form>
+              <select name="shapes" id="shapes" required>
+                <option value="" disabled selected>Select a Shape</option>
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+              </select>
+              <select name="colours" id="colours" required>
+                <option value="" disabled selected>Select a Colour</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="purple">Purple</option>
+              </select>
+              <button>Create</button>
+            </form>
+          </div> 
+            <section class="shape-box">
+            </section>
+            <p class="shape-info"></p>
+        </div> 
+      </main>
+  </body>
+</html>
+
+
